@@ -1,0 +1,3 @@
+->check all services via hexad.postman_collection.json
+->all services are inside of controller classes.
+->java , spring , h2 db used in this project. 

@@ -1,0 +1,423 @@
+{
+	"info": {
+		"_postman_id": "89abf988-5414-480f-9f1f-cb53ec2aafcb",
+		"name": "hexad",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "getUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/libraryManagement/user/get/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"user",
+								"get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/libraryManagement/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\":\"dd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/libraryManagement/user/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"user",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/libraryManagement/user/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"user",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\":\"ddtd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/libraryManagement/user/update/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"user",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "book",
+			"item": [
+				{
+					"name": "getBook",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\":\"dd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/libraryManagement/book/get/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"book",
+								"get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBook",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/libraryManagement/book/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"book",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bookName\":\"dd\",\n    \"bookWriter\":\"as\",\n    \"bookStock\":6,\n    \"copyStock\":5\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/libraryManagement/book/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"book",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/libraryManagement/book/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"book",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bookName\":\"dddd\",\n    \"bookWriter\":\"as\",\n    \"bookStock\":6,\n    \"copyStock\":5\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/libraryManagement/book/update/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"book",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "bookManagement",
+			"item": [
+				{
+					"name": "borrowBookByUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\":1,\n    \"bookStatus\":\"COPY\",\n    \"userBookStatus\":\"BORROW\",\n    \"bookId\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/libraryManagement/bookManagement/borrowBookByUser",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"bookManagement",
+								"borrowBookByUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUsersBook",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/libraryManagement/bookManagement/getUsersBook?userId=1&userBookStatus=VIEW",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"bookManagement",
+								"getUsersBook"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "1"
+								},
+								{
+									"key": "userBookStatus",
+									"value": "VIEW"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBookBoughtByTheUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/libraryManagement/bookManagement/getBookBoughtByTheUser?bookId=2&userBookStatus=BORROW",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"bookManagement",
+								"getBookBoughtByTheUser"
+							],
+							"query": [
+								{
+									"key": "bookId",
+									"value": "2"
+								},
+								{
+									"key": "userBookStatus",
+									"value": "BORROW"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "viewBookByUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\":1,\n    \"bookStatus\":\"ORIGINAL\",\n    \"userBookStatus\":\"VIEW\",\n    \"bookId\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/libraryManagement/bookManagement/viewBookByUsers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"bookManagement",
+								"viewBookByUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lendBackBookByUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\":1,\n    \"bookStatus\":\"ORIGINAL\",\n    \"userBookStatus\":\"VIEW\",\n    \"bookId\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/libraryManagement/bookManagement/lendBackBookByUsers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libraryManagement",
+								"bookManagement",
+								"lendBackBookByUsers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
